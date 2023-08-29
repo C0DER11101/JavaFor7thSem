@@ -11,8 +11,6 @@ class Average{
 
 		System.out.println();
 
-		System.out.println("Enter elements into the array: ");
-
 		int avg=0;
 
 		for(int i=0; i<4; i++)
