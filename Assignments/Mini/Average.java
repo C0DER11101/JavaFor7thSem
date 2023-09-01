@@ -2,6 +2,7 @@
 
 class Average{
 	public static void main(String args[]){
+
 		int array[]={12, 14, 16, 18};
 
 		System.out.println("Array elements: ");
