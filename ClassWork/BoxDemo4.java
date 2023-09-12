@@ -6,8 +6,6 @@ class Box{
 	double depth;
 
 	Box(double w, double h, double d){
-		System.out.println("Constructing Box");
-
 		width=w;
 		height=h;
 		depth=d;
