@@ -32,15 +32,20 @@ class OverloadCons{
 		Box myBox2=new Box(12, 12, 12);
 		Box myBox3=new Box(100);
 
+		Box myCube=new Box(7);
+
 		double vol;
 
 		vol=myBox1.volume();
-		System.out.println("Volumen of box-1: "+vol);
+		System.out.println("Volume of box-1: "+vol);
 
 		vol=myBox2.volume();
-		System.out.println("Volumen of box-2: "+vol);
+		System.out.println("Volume of box-2: "+vol);
 
 		vol=myBox3.volume();
-		System.out.println("Volumen of box-3: "+vol);
+		System.out.println("Volume of box-3: "+vol);
+
+		vol=myCube.volume();
+		System.out.println("Volume of cube: "+vol);
 	}
 }
