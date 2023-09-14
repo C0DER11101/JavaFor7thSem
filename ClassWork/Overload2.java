@@ -24,7 +24,7 @@ class Overload2{
 		ob.test(10,20);
 
 		result=ob.test(88);
-		System.out.println("Result of ob.test(123.25): "+result);
+		System.out.println("Result of ob.test(88): "+result);
 
 		result=ob.test(123.25);
 		System.out.println("Result of ob.test(123.25): "+result);
