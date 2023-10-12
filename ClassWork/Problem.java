@@ -19,14 +19,15 @@ class userDetails{
 	void getAge(){
 		Scanner input=new Scanner(System.in);
 		System.out.print("Enter age: ");
+		String nextL=new String();
 		age=input.nextInt();
+		nextL=input.next();
 	}
 }
 
 class Problem{
 	public static void main(String args[]){
 		userDetails user=new userDetails();
-
 		user.getAge();
 	}
 }
