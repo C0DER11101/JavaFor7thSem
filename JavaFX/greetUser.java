@@ -31,8 +31,8 @@ public class greetUser extends Application {
 
 	greetButton.setOnAction(e -> changeScene(mainStage, nameInput));
 
-	VBox layout=new VBox(10);
-	layout.setPadding(new Insets(10, 10, 10, 10));
+	VBox layout=new VBox(10);    // setting the padding between the labels and the border of the stage
+	layout.setPadding(new Insets(10, 10, 10, 10));   // setting padding between the children(labels and text fields)
 	layout.getChildren().addAll(nameLabel, nameInput, greetButton);
 
 	Scene scene=new Scene(layout, 300, 250);
@@ -51,13 +51,13 @@ public class greetUser extends Application {
 	    nameInput.setStyle("-fx-border-color: red ; -fx-border-width: 1px ;");
 	}
 	catch(NumberFormatException e){
-	    nameInput.setStyle("-fx-border-color: red ; -fx-border-width: 1px ;");
+	    nameInput.setStyle(null);      // you entered a string, so no problem
 	    mainStage.setTitle("GREET");
 	    StackPane layout=new StackPane();
 
 	    Label greet=new Label("WELCOME "+nameInput.getText());
 
-	    layout.getChildren().addAll(greet);
+	    layout.getChildren().add(greet);
 
 	    Scene scene=new Scene(layout, 300, 250);
 
